@@ -7,7 +7,9 @@
   --clr-grey: #c5c5c5;
   --clr-fontColor: #3e3939;
   --clr-orange: #f77f22;
-  --min-width: 320px;
+  --min-width: 340px;
+  --mid-point: 768px;
+  --max-width: 1024px;
 }
 * {
   margin: 0;
@@ -46,24 +48,11 @@ select {
 
 /* for desktop mode */
 @media (min-width: 991px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vh;
-    max-width: 900px;
-    margin: auto;
-  }
-  .sedan {
-    border-radius: 10px 0 0 10px;
-  }
-  .luxury {
-    border-radius: 0 10px 10px 0;
-  }
-  .card {
-    padding: 3rem;
-  }
-  .card p {
-    margin-bottom: 5rem;
+  header .input-container {
+    height: 2.5em;
+    position: absolute;
+    background-color: #3e3939;
+    top: 0;
+    right: 2rem;
   }
 }
