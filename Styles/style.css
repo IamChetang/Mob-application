@@ -7,6 +7,9 @@
   --clr-grey: #c5c5c5;
   --clr-fontColor: #3e3939;
   --clr-orange: #f77f22;
+  --transition: all 0.3s linear;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --min-width: 340px;
   --mid-point: 768px;
   --max-width: 1024px;
@@ -30,12 +33,21 @@ header {
 }
 header .input-container {
   min-width: var(--min-width);
-  height: 2.5em;
+  height: 3.2em;
   position: absolute;
-  background-color: #3e3939;
+  background-color: #f3e7e7;
+  border-radius: 25px;
+  display: flex;
+  box-shadow: var(--light-shadow);
 }
 
 header .search {
+  border-radius: 25px;
+  width: 100%;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  padding-left: 1rem;
 }
 
 select {
@@ -44,6 +56,11 @@ select {
   background-color: var(--clr-lightgreen);
   padding: 0.5rem 0.8rem;
   position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  outline: none;
+  text-decoration: none;
+  border: none;
 }
 
 /* for desktop mode */
@@ -52,7 +69,7 @@ select {
     height: 2.5em;
     position: absolute;
     background-color: #3e3939;
-    top: 0;
-    right: 2rem;
+    top: 1rem;
+    right: 3rem;
   }
 }
