@@ -105,10 +105,28 @@ header .search {
   color: var(--clr-grey);
   border: none;
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
 }
-.sort option {
-  font-size: 1rem;
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.list {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: var(--light-shadow);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin-top: 0.8rem;
+}
+.list img {
+  border-radius: 50%;
+  width: 4rem;
 }
 
 /* for desktop mode */
