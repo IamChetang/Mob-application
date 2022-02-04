@@ -29,7 +29,7 @@ body {
 }
 header {
   margin: 0 0.8rem;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
 }
 header .input-container {
   min-width: var(--min-width);
@@ -51,9 +51,8 @@ header .search {
 }
 .select {
   border-radius: 2rem;
-
   background-color: var(--clr-lightgreen);
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 1rem;
   position: absolute;
   top: 0.45rem;
   right: 0.3rem;
@@ -65,9 +64,19 @@ header .search {
   background-color: transparent;
   color: var(--clr-brightgreen);
 }
-.select .color {
-  border-radius: 25px;
-  background-color: none;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+.hero-image {
+  width: 7.5rem;
+  height: auto;
+}
+.main p {
+  color: var(--clr-brightgreen);
 }
 
 /* for desktop mode */
