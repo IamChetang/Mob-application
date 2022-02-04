@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+
+:root {
+  --clr-brightgreen: #49c082;
+  --clr-lightgreen: #cceddc;
+  --clr-red: #f26a6e;
+  --clr-grey: #c5c5c5;
+  --clr-fontColor: #3e3939;
+  --clr-orange: #f77f22;
+  --min-width: 320px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+header {
+  margin: 0 0.8rem;
+  margin-top: 2rem;
+}
+header .input-container {
+  min-width: var(--min-width);
+  height: 2.5em;
+  position: absolute;
+  background-color: #3e3939;
+}
+
+header .search {
+}
+
+select {
+  border-radius: 2rem;
+  color: var(--clr-brightgreen);
+  background-color: var(--clr-lightgreen);
+  padding: 0.5rem 0.8rem;
+  position: absolute;
+}
+
+/* for desktop mode */
+@media (min-width: 991px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+  .sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  .luxury {
+    border-radius: 0 10px 10px 0;
+  }
+  .card {
+    padding: 3rem;
+  }
+  .card p {
+    margin-bottom: 5rem;
+  }
+}
