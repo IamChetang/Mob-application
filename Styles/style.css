@@ -27,6 +27,12 @@ body {
   font-family: 'Roboto', sans-serif;
   color: black;
 }
+.green {
+  color: var(--clr-brightgreen);
+}
+.orange {
+  color: var(--clr-orange);
+}
 header {
   margin: 0 0.8rem;
   margin-top: 1.2rem;
@@ -54,9 +60,10 @@ header .search {
   background-color: var(--clr-lightgreen);
   padding: 0.5rem 1rem;
   position: absolute;
-  top: 0.45rem;
+  top: 0.4rem;
   right: 0.3rem;
 }
+
 .select select {
   outline: none;
   text-decoration: none;
@@ -77,6 +84,31 @@ header .search {
 }
 .main p {
   color: var(--clr-brightgreen);
+  font-size: 0.9rem;
+}
+.main .filter {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+.main .sort {
+  border-radius: 2rem;
+  background-color: transparent;
+  padding: 0.2rem 0.5rem;
+  border: 0.5px solid var(--clr-grey);
+}
+.main .sort select {
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--clr-grey);
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.sort option {
+  font-size: 1rem;
 }
 
 /* for desktop mode */
