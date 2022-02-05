@@ -163,21 +163,22 @@ header .search {
 }
 .second-list {
   width: 90%;
-  display: none;
+  display: flex;
   flex-direction: column;
-  margin-right: 4rem;
   align-items: center;
   background-color: white;
   box-shadow: var(--dark-shadow);
+  border-radius: 25px;
+  padding-bottom: 1rem;
+  padding-right: 3rem;
 }
 .image-container {
   display: flex;
-
   align-items: center;
   gap: 1rem;
 }
 .active {
-  display: flex;
+  display: none;
   box-shadow: 0 5px 19px 2px var(--light-shadow);
   border-radius: 2rem 2rem 0 0;
   transition: var(--transition);
@@ -203,7 +204,7 @@ a {
 }
 
 .second-list p {
-  margin-left: 3rem;
+  margin-left: 1.8rem;
   font-size: 0.8rem;
   color: var(--clr-grey);
   margin-top: 0.6rem;
@@ -231,7 +232,16 @@ a {
     height: 2.5em;
     position: absolute;
     background-color: #3e3939;
-    top: 1rem;
+    top: 1.5rem;
     right: 3rem;
+  }
+
+  .select {
+    border-radius: 2rem;
+    background-color: var(--clr-lightgreen);
+    padding: 0.35rem 0.7rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.3rem;
   }
 }
