@@ -7,9 +7,12 @@
   --clr-grey: #c5c5c5;
   --clr-fontColor: #3e3939;
   --clr-orange: #f77f22;
-  --transition: all 0.3s linear;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --clr-lightOrange: #ffe3cc;
+  --clr-darkCream: #c4ba54;
+  --clr-lightCream: #edeacc;
+  --transition: all 1s linear;
+  --light-shadow: 0 5px 15px rgba(4, 248, 37, 0.1);
+  --dark-shadow: 0 5px 15px rgba(4, 248, 37, 0.2);
   --min-width: 360px;
   --mid-point: 768px;
   --max-width: 1024px;
@@ -32,6 +35,22 @@ body {
 }
 .orange {
   color: var(--clr-orange);
+}
+.red {
+  color: var(--clr-red);
+}
+.cream {
+  color: var(--clr-darkCream);
+}
+.bg-green {
+  background-color: var(--clr-lightgreen);
+}
+
+.bg-orange {
+  background-color: var(--clr-lightOrange);
+}
+.bg-cream {
+  background-color: var(--clr-lightCream);
 }
 header {
   margin: 0 0.8rem;
@@ -125,8 +144,11 @@ header .search {
   margin-top: 0.8rem;
 }
 .list img {
+  width: 65px;
+  display: block;
+  height: 65px;
+  object-fit: cover;
   border-radius: 50%;
-  width: 4rem;
 }
 .center ul {
   margin: 0;
@@ -140,10 +162,67 @@ header .search {
   list-style-type: none;
 }
 .second-list {
+  width: 90%;
   display: none;
+  flex-direction: column;
+  margin-right: 4rem;
+  align-items: center;
+  background-color: white;
+  box-shadow: var(--dark-shadow);
+}
+.image-container {
+  display: flex;
+
+  align-items: center;
+  gap: 1rem;
 }
 .active {
   display: flex;
+  box-shadow: 0 5px 19px 2px var(--light-shadow);
+  border-radius: 2rem 2rem 0 0;
+  transition: var(--transition);
+}
+.center .heading {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.center .para {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  color: var(--clr-grey);
+}
+a {
+  font-size: 0.6rem;
+  text-decoration: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  margin-right: 1.2rem;
+  margin-left: 0.8rem;
+}
+
+.second-list p {
+  margin-left: 3rem;
+  font-size: 0.8rem;
+  color: var(--clr-grey);
+  margin-top: 0.6rem;
+  border-bottom: 1px solid var(--clr-grey);
+  padding-bottom: 0.5rem;
+}
+.like-button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-right: 4rem;
+  color: var(--clr-grey);
+}
+
+.like-button p {
+  margin: 0;
+  padding: 0.6rem 0.8rem;
+  background-color: var(--clr-lightgreen);
+  border-radius: 50%;
 }
 
 /* for desktop mode */
