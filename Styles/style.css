@@ -233,7 +233,7 @@ a {
 footer {
   z-index: 1000;
   position: fixed;
-  top: 460px;
+  top: 680px;
   left: 10px;
   scroll-behavior: none;
   overflow-y: none;
