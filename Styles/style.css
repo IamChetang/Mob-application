@@ -97,7 +97,7 @@ header .search {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 .hero-image {
   width: 7.5rem;
@@ -233,7 +233,7 @@ a {
 footer {
   z-index: 1000;
   position: fixed;
-  top: 680px;
+  top: 660px;
   left: 10px;
   scroll-behavior: none;
   overflow-y: none;
@@ -241,11 +241,10 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   min-width: var(--min-width);
-  height: 3.2em;
-  border-radius: 25px;
+  height: 4em;
+  border-radius: 35px;
   display: flex;
   box-shadow: var(--dark-shadow);
-  padding: 1rem 0;
   color: var(--clr-grey);
   background-color: white;
 }
