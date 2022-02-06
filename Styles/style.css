@@ -176,6 +176,7 @@ header .search {
   border-radius: 25px;
   padding-bottom: 1rem;
   padding-right: 3rem;
+  overflow: hidden;
 }
 .image-container {
   display: flex;
@@ -260,20 +261,20 @@ footer p {
 
 /* for desktop mode */
 @media (min-width: 991px) {
-  header .input-container {
-    height: 2.5em;
-    position: absolute;
-    background-color: #3e3939;
-    top: 1.5rem;
-    right: 3rem;
+  header {
+    position: relative;
+    width: var(--min-width);
+    left: 600px;
   }
+  footer {
+    position: fixed;
+    top: 660px;
+    left: 600px;
+  }
+  .list-container {
+    width: 40rem;
+    position: relative;
 
-  .select {
-    border-radius: 2rem;
-    background-color: var(--clr-lightgreen);
-    padding: 0.35rem 0.7rem;
-    position: absolute;
-    top: 0.2rem;
-    right: 0.3rem;
+    left: 500px;
   }
 }
