@@ -13,7 +13,6 @@ function toggleClass() {
 //
 //     this.classList.toggle('active');
 
-//
 //     var panel = this.nextElementSibling;
 //     if (panel.style.display === 'none') {
 //       panel.style.display = 'flex';

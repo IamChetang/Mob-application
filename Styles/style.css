@@ -146,7 +146,7 @@ header .search {
   box-shadow: var(--light-shadow);
   border-radius: 2rem;
   padding: 0.5rem;
-  margin-top: 0.8rem;
+  margin-top: 1.2rem;
 }
 .list img {
   width: 65px;
@@ -168,6 +168,7 @@ header .search {
 }
 .second-list {
   width: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,7 +235,7 @@ a {
 footer {
   z-index: 1000;
   position: fixed;
-  top: 660px;
+  bottom: 1.5rem;
   left: 10px;
   scroll-behavior: none;
   overflow-y: none;
